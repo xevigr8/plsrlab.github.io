@@ -2,47 +2,123 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Catálogo de Productos</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    h1 { text-align:center; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .producto {
-      border: 1px solid #ccc;
-      padding: 15px;
-      border-radius: 8px;
-      background: #fafafa;
-    }
-    .producto img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-  </style>
+  <title>Catálogo – Sneakers</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<h1>Catálogo de Productos</h1>
+<div class="navbar">
+  <div class="logo">Mi Tienda</div>
+  <div>
+    <a href="index.html">Inicio</a>
+    <a href="#">Sneakers</a>
+    <a href="#">Contacto</a>
+  </div>
+</div>
+
+<h1>Sneakers en Stock</h1>
 
 <div class="grid">
 
-  <div class="producto">
-    <img src="https://via.placeholder.com/300" alt="Producto 1">
-    <h3>Producto 1</h3>
-    <p>Descripción breve.</p>
-    <p><strong>Stock:</strong> 10 unidades</p>
-  </div>
+  <!-- Adidas Campus Bad Bunny Chalky Brown -->
+  <a href="producto_campus_bunny.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-blue">NUEVO</span>
+    </div>
+    <img src="img/campus_bunny.jpg" alt="Adidas Campus Bad Bunny Chalky Brown">
+    <div class="card-title">Adidas Campus Bad Bunny Chalky Brown</div>
+    <div class="brand">ADIDAS</div>
+    <div class="price">160€</div>
+  </a>
 
-  <div class="producto">
-    <img src="https://via.placeholder.com/300" alt="Producto 2">
-    <h3>Producto 2</h3>
-    <p>Descripción breve.</p>
-    <p><strong>Stock:</strong> 5 unidades</p>
-  </div>
+  <!-- Adidas Gazelle Indoor Bad Bunny Cabo Rojo -->
+  <a href="producto_gazelle_cabo.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-purple">STOCK</span>
+    </div>
+    <img src="img/gazelle_cabo.jpg" alt="Adidas Gazelle Cabo Rojo">
+    <div class="card-title">Adidas Gazelle Indoor Bad Bunny Cabo Rojo</div>
+    <div class="brand">ADIDAS</div>
+    <div class="price">170€</div>
+  </a>
+
+  <!-- Adidas Gazelle Indoor Bad Bunny White -->
+  <a href="producto_gazelle_white.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-purple">STOCK</span>
+    </div>
+    <img src="img/gazelle_white.jpg" alt="Adidas Gazelle White">
+    <div class="card-title">Adidas Gazelle Indoor Bad Bunny White</div>
+    <div class="brand">ADIDAS</div>
+    <div class="price">140€</div>
+  </a>
+
+  <!-- Nike ZoomX Vaporfly Next% 3 -->
+  <a href="producto_vaporfly.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-blue">RUNNING</span>
+    </div>
+    <img src="img/vaporfly.jpg" alt="Nike Vaporfly 3">
+    <div class="card-title">Nike ZoomX Vaporfly Next% 3</div>
+    <div class="brand">NIKE</div>
+    <div class="price">140€</div>
+  </a>
+
+  <!-- Nike P-6000 -->
+  <a href="producto_p6000.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-blue">OFERTA</span>
+    </div>
+    <img src="img/p6000.jpg" alt="Nike P-6000 Light Orewood Brown">
+    <div class="card-title">Nike P-6000 Light Orewood Brown</div>
+    <div class="brand">NIKE</div>
+    <div class="price">70€</div>
+  </a>
+
+  <!-- Nike Phantom GX 2 Elite Ag Blue Fury -->
+  <a href="producto_phantom_gx2_blue.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-purple">FÚTBOL</span>
+    </div>
+    <img src="img/phantom_gx2_blue.jpg" alt="Nike Phantom GX 2 Elite AG Blue Fury">
+    <div class="card-title">Nike Phantom GX 2 Elite AG Blue Fury</div>
+    <div class="brand">NIKE</div>
+    <div class="price">130€</div>
+  </a>
+
+  <!-- Nike Phantom Luna 2 Elite Mad Energy -->
+  <a href="producto_luna2_energy.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-purple">FÚTBOL</span>
+    </div>
+    <img src="img/luna2_energy.jpg" alt="Nike Phantom Luna 2 Mad Energy">
+    <div class="card-title">Nike Phantom Luna 2 Elite FG Mad Energy Pack</div>
+    <div class="brand">NIKE</div>
+    <div class="price">130€</div>
+  </a>
+
+  <!-- Nike Phantom Luna 2 Elite Prism Pack -->
+  <a href="producto_luna2_prism.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-purple">FÚTBOL</span>
+    </div>
+    <img src="img/luna2_prism.jpg" alt="Nike Phantom Luna 2 Prism Pack">
+    <div class="card-title">Nike Phantom Luna 2 Elite FG Prism Pack</div>
+    <div class="brand">NIKE</div>
+    <div class="price">130€</div>
+  </a>
+
+  <!-- Nike Zoom Mercurial Superfly SG-Pro Mad Ready -->
+  <a href="producto_superfly_mad.html" class="card" style="text-decoration:none; color:inherit;">
+    <div class="badges">
+      <span class="badge badge-purple">FÚTBOL</span>
+    </div>
+    <img src="img/superfly_madready.jpg" alt="Nike Mercurial Superfly 9 SG-Pro Mad Ready">
+    <div class="card-title">Nike Mercurial Superfly 9 Elite SG-Pro Mad Ready</div>
+    <div class="brand">NIKE</div>
+    <div class="price">130€</div>
+  </a>
 
 </div>
 
