@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { text-align:center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .producto {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Catálogo de Productos</h1>
+
+<div class="grid">
+
+  <div class="producto">
+    <img src="https://via.placeholder.com/300" alt="Producto 1">
+    <h3>Producto 1</h3>
+    <p>Descripción breve.</p>
+    <p><strong>Stock:</strong> 10 unidades</p>
+  </div>
+
+  <div class="producto">
+    <img src="https://via.placeholder.com/300" alt="Producto 2">
+    <h3>Producto 2</h3>
+    <p>Descripción breve.</p>
+    <p><strong>Stock:</strong> 5 unidades</p>
+  </div>
+
+</div>
+
+</body>
+</html>
